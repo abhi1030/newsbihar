@@ -64,46 +64,61 @@
     <div class="col-md-8  bg-light ml-auto mr-auto mt-4 pt-4" >
       <h2>Top Stories</h2><hr>
       <div class="row">
+        <?php
+        $allstories = Index::query('select * from stories');
+        $storyno = 0;
+        foreach ($allstories as $story) {
+          if($storyno > 5){
+            break;
+          }
+          echo '
+          <div class="col-md-4">
+            <div class="card mb-2">
+                <img src="./images/story/'.$story['image1'] . '" width="100%" >
+              <div class="card-body">
+                <h5 class="card-title">'.$story['title'].'</h5>
+                <p class="card-text">'.$story['short_description'].'</p>
 
-        <!-- The video contents -->
-        <div class="col-md-4">
-          <div class="card mb-2">
-              <iframe width="100%" height="100%" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            <div class="card-body">
-              <h5 class="card-title">News title</h5>
-              <p class="card-text">Small description about the news.</p>
-
-              <span  class="fas fa-thumbs-up ml-2"> Likes <span class="badge badge-danger badge-pill">1</span></span>
-              <span  class="fas fa-eye ml-2"> Views <span class="badge badge-success badge-pill">1</span></span>
-              <a href="" class="btn btn-success mt-2">view</a>
+                <span  class="fas fa-thumbs-up ml-2"> Likes <span class="badge badge-danger badge-pill">'.$story['likes'].'</span></span>
+                <span  class="fas fa-eye ml-2"> Views <span class="badge badge-success badge-pill">'.$story['views'].'</span></span>
+                <a href="" class="btn btn-success mt-2">view</a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-4 mb-2">
-          <div class="card">
-              <iframe width="100%" height="100%" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            <div class="card-body">
-              <h5 class="card-title">News title</h5>
-              <p class="card-text">Small description of the news.</p>
-              <a href="" class="btn btn-primary">view</a>
-            </div>
-          </div>
-        </div>
+          ';
+          $storyno += 1;
+        }
+        ?>
+
+
       </div>
 
         <h2>Trending news</h2><hr>
         <div class="row">
         <!-- The video contents -->
-        <div class="col-md-4 mb-2">
-          <div class="card">
-              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/9LzHTAM57HM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            <div class="card-body">
-              <h5 class="card-title">News title</h5>
-              <p class="card-text">Small description about the news.</p>
-              <a href="" class="btn btn-primary">view</a>
+        <?php
+        $allnews = Index::query("select * from news");
+        $newsno = 0;
+        foreach ($allnews as $news){
+          if($newsno > 5){
+            break;
+          }
+          echo '<div class="col-md-4 mb-2">
+            <div class="card">
+                <iframe src="'.$news['video'] .'" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              <div class="card-body">
+                <h5 class="card-title">'.$news['title'].'</h5>
+                <p class="card-text">'.$news['description'].'</p>
+                <span  class="fas fa-thumbs-up ml-2"> Likes <span class="badge badge-danger badge-pill">'.$news['likes'].'</span></span>
+                <span  class="fas fa-eye ml-2"> Views <span class="badge badge-success badge-pill">'.$news['views'].'</span></span>
+                <a href="" class="btn btn-success mt-2">view</a>
+              </div>
             </div>
-          </div>
-        </div>
+          </div>';
+          $newsno += 1;
+        }
+        ?>
+
       </div>
 
 

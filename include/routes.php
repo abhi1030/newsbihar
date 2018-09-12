@@ -7,6 +7,10 @@ Route::set('news', function(){
   News::createView('News');
 });
 
+Route::set('stories', function(){
+  Stories::createView('Stories');
+});
+
 Route::set('about-us', function(){
   //AboutUs::test();
   AboutUs::createView('AboutUs');
@@ -19,6 +23,7 @@ Route::set('contacts', function(){
 
 Route::set('login', function(){
   Login::createView('Login');
+
 });
 
 Route::set('register', function(){
@@ -40,9 +45,8 @@ Route::set('logout', function(){
 });
 
 Route::set('dashboard', function(){
-  Dashboard::createView('Dashboard');
+  Dashboard::createView();
 });
-
 
 
 ?>

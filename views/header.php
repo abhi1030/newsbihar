@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>NewsPortal</title>
+    <title>NewsBihar24x7</title>
 
     <!-- Jquery and Popper CDN -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -34,7 +34,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbar-menu">
-        <a href="#"><img src="./images/logo.jpg" width="80px" height="80px"></a>
+        <a href="#"><img src="./images/logo.png" width="80px" height="80px"></a>
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
         <a class="nav-link" href="./">Home</a>
@@ -43,13 +43,13 @@
         <a class="nav-link" href="./news">News section</a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"href="">Category</a>
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="./stories">Category</a>
         <div class="dropdown-menu">
-          <a href="#" class="dropdown-item">Bussiness News</a>
-          <a href="#" class="dropdown-item">Latest News</a>
-          <a href="#" class="dropdown-item">Bollywood News</a>
-          <a href="#" class="dropdown-item">Political News</a>
-          <a href="#" class="dropdown-item">Sports News</a>
+          <a href="./stories?c=bussiness" class="dropdown-item">Bussiness News</a>
+          <a href="./stories?c=latest" class="dropdown-item">Latest News</a>
+          <a href="./stories?c=bollywood" class="dropdown-item">Bollywood News</a>
+          <a href="./stories?c=political" class="dropdown-item">Political News</a>
+          <a href="./stories?c=sports" class="dropdown-item">Sports News</a>
         </div>
       </li>
       <li class="nav-item">
@@ -66,7 +66,7 @@
       <button class="btn btn-success my-2 my-md-0" type="submit">Search</button>
     </form>
     <button class="searchButton" type="button" data-toggle="collapse" data-target="#searchBox">
-      <span class="fas fa-search "> </span>
+      <span class="fa fa-search "> </span>
     </button>
 
 
@@ -101,8 +101,8 @@
       <div class="dropdown">
         <a class="text-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> User Account</a>
         <div class="dropdown-menu">
-          <a href="./login" class="dropdown-item">Login</a>
-          <a href="./register" class="dropdown-item">Register</a>
+          <a href="#myloginModal" class="dropdown-item trigger-btn" data-toggle="modal">Login</a>
+          <a href="#myregisterModal" class="dropdown-item trigger-btn" data-toggle="modal">Register</a>
         </div>
       </div>
     </div>

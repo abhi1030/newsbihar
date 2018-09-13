@@ -9,21 +9,21 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img class="d-block w-100" src="./images/slide4.jpg" alt="First slide">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>First Slide</h5>
+        <div class="carousel-caption d-none d-lg-block">
+          <h5 >First Slide</h5>
           <p>Some information on the slide</p>
         </div>
       </div>
       <div class="carousel-item">
         <img class="d-block w-100" src="./images/slide5.jpg" alt="Second slide">
-        <div class="carousel-caption d-none d-md-block">
+        <div class="carousel-caption d-none d-lg-block">
           <h5>second Slide</h5>
           <p>Some information on the slide</p>
         </div>
       </div>
       <div class="carousel-item">
         <img class="d-block w-100" src="./images/slide6.jpg" alt="Third slide">
-        <div class="carousel-caption d-none d-md-block">
+        <div class="carousel-caption d-none d-lg-block">
           <h5>Third Slide</h5>
           <p>Some information on the slide</p>
         </div>
@@ -44,7 +44,7 @@
 <!-- page content -->
 <div class="container-fluid">
   <div class="row" >
-    <div class="col-md-3 bg-light ml-auto mr-auto mt-4 pt-4">
+    <div class="col-lg-3 bg-light ml-auto mr-auto mt-4 pt-4">
       <h4 class="text-dark text-center">Latest feeds</h4>
       <ul class="list-group">
         <li class="list-group-item d-flex justify-content-between align-items-center">
@@ -61,7 +61,7 @@
         </li>
       </ul>
     </div>
-    <div class="col-md-8  bg-light ml-auto mr-auto mt-4 pt-4" >
+    <div class="col-lg-8  bg-light ml-auto mr-auto mt-4 pt-4" >
       <h2>Top Stories</h2><hr>
       <div class="row">
         <?php
@@ -72,7 +72,7 @@
             break;
           }
           echo '
-          <div class="col-md-4">
+          <div class="col-lg-4">
             <div class="card mb-2">
                 <img src="./images/story/'.$story['image1'] . '" width="100%" >
               <div class="card-body">
@@ -103,7 +103,7 @@
           if($newsno > 5){
             break;
           }
-          echo '<div class="col-md-4 mb-2">
+          echo '<div class="col-lg-4 mb-2">
             <div class="card">
                 <iframe src="'.$news['video'] .'" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
               <div class="card-body">

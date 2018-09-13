@@ -1,6 +1,6 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-8 bg-light ml-auto mr-auto mt-4 pt-4 pb-4 text-center">
+    <div class="col-lg-8 bg-light ml-auto mr-auto mt-4 pt-4 pb-4 text-center">
       <h5>NewsBihar24x7</h5><br>
       <img src="./images/slide3.jpg" width="100%" height="300px"><br>
       <p class="text-left ml-4 mr-4 pr-4 mt-4">NewsBihar24x7 is a startup news portal. We are dedicated to provide the most recent and latest news in our news Portal.</p>

@@ -31,12 +31,13 @@
   <body>
     <!-- Top navigation pannel -->
     <div class="container-fluid fixed-top">
-    <nav class="navbar navbar-expand-md navbar-dark bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu">
         <span class="navbar-toggler-icon"></span>
       </button>
+        <a href="./" class="ml-auto mr-auto"><img src="./images/logo.png" width="120px" height="80px" mb-4></a>
       <div class="collapse navbar-collapse" id="navbar-menu">
-        <a href="./"><img src="./images/logo.png" width="80px" height="80px" mb-4></a>
+
         <ul class="navbar-nav ml-4">
           <li class="nav-item">
             <a class="nav-link" href="./">Profile</a>
@@ -45,12 +46,12 @@
             <a class="nav-link" href="./">Settings</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./">Logout</a>
+            <a class="nav-link" href="./logout">Logout</a>
           </li>
         </ul>
           <form class="collapse form-inline ml-auto" id="searchBox">
             <input class="form-control mr-sm-2" type="search" placeholder="Search">
-            <button class="btn btn-success my-2 my-md-0" type="submit">Search</button>
+            <button class="btn btn-success my-2 my-lg-0" type="submit">Search</button>
           </form>
           <button class="searchButton ml-auto" type="button" data-toggle="collapse" data-target="#searchBox">
             <span class="fa fa-search "> </span>
@@ -65,7 +66,7 @@
 <div style="width:100%;height:100px;"></div>
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-3 bg-light ml-auto mr-auto mt-4 pt-4 pb-4 text-right sidebar">
+    <div class="col-lg-3 bg-light ml-auto mr-auto mt-4 pt-4 pb-4 text-right sidebar">
       <h4>Dashboard menu</h4>
       <div class="sidebar-sticky">
             <ul class="nav flex-column">
@@ -97,7 +98,7 @@
             </ul>
           </div>
     </div>
-    <div class="col-md-8 bg-light ml-auto mr-auto mt-4 pt-4 pb-4">
+    <div class="col-lg-8 bg-light ml-auto mr-auto mt-4 pt-4 pb-4">
 
     </div>
   </div>

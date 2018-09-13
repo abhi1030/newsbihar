@@ -2,6 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
     <title>NewsBihar24x7</title>
 
     <!-- Jquery and Popper CDN -->
@@ -20,7 +22,7 @@
     <!-- Custom Style and script -->
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"> </script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
 
 
   </head>
@@ -29,13 +31,14 @@
 
     <!-- Top navigation pannel -->
     <div class="container-fluid fixed-top">
-    <nav class="navbar navbar-expand-md navbar-dark bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <a href="#" class="ml-auto mr-auto"><img src="./images/logo.png" width="120px" height="80px" ></a>
+
       <div class="collapse navbar-collapse" id="navbar-menu">
-        <a href="#"><img src="./images/logo.png" width="80px" height="80px"></a>
-    <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
         <a class="nav-link" href="./">Home</a>
       </li>
@@ -61,9 +64,9 @@
     </ul>
 
 
-    <form class="collapse form-inline my-2 my-md-0" id="searchBox">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search">
-      <button class="btn btn-success my-2 my-md-0" type="submit">Search</button>
+    <form class="collapse form-inline mr-2" id="searchBox">
+      <input class="form-control" type="search" placeholder="Search">
+      <button class="btn btn-success" type="submit">Search</button>
     </form>
     <button class="searchButton" type="button" data-toggle="collapse" data-target="#searchBox">
       <span class="fa fa-search "> </span>
@@ -77,12 +80,12 @@
 <!-- Page title and user options -->
 <div class="container-fluid">
   <div class="row pt-2 pb-2 pl-2 bg-dark text-light">
-    <div class="col-md-4">
+    <div class="col-lg-4">
       <h4><?php echo $pageTitle ?></h4>
     </div>
     <?php if(isset($_SESSION['username'])){
       echo '
-      <div class="col-md-2 ml-auto text-left">
+      <div class="col-lg-2 ml-auto text-left">
         <div class="dropdown">
           <h4>'.$_SESSION['username'].'</h4>
           <a class="text-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> User Action</a>
@@ -97,9 +100,9 @@
     }
     else {
       echo '
-    <div class="col-md-2 ml-auto text-left">
+    <div class="col-lg-2 ml-auto text-left">
       <div class="dropdown">
-        <a class="text-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> User Account</a>
+        <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> User Account </a>
         <div class="dropdown-menu">
           <a href="#myloginModal" class="dropdown-item trigger-btn" data-toggle="modal">Login</a>
           <a href="#myregisterModal" class="dropdown-item trigger-btn" data-toggle="modal">Register</a>

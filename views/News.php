@@ -1,6 +1,6 @@
 <div class="container-fluid">
   <div class="row" >
-    <div class="col-md-3 bg-light ml-auto mr-auto mt-4 pt-4">
+    <div class="col-lg-3 bg-light ml-auto mr-auto mt-4 pt-4">
       <h4 class="text-dark text-center">Category</h4>
       <ul class="list-group">
     <li class="list-group-item d-flex justify-content-between align-items-center">
@@ -17,7 +17,7 @@
     </li>
 </ul>
     </div>
-    <div class="col-md-8  bg-light ml-auto mr-auto mt-4 pt-4" style="min-height:500px;">
+    <div class="col-lg-8  bg-light ml-auto mr-auto mt-4 pt-4" style="min-height:500px;">
       <div class="row">
       <?php
       $allnews = Index::query("select * from news");
@@ -26,7 +26,7 @@
         if($newsno > 20){
           break;
         }
-        echo '<div class="col-md-4 mb-2">
+        echo '<div class="col-lg-4 mb-2">
           <div class="card">
               <iframe width="100%" height="100%" src="'.$news['video'] .'" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             <div class="card-body">

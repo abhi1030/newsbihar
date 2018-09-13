@@ -120,13 +120,31 @@ a{
 		font-size: 21px;
 	}
 
+
+  .bg-grey{
+  background-color: #444;
+  }
+  .tall{
+    line-height: 50px;
+  }
+  .colora{
+    color:#e5c318;
+  }
+  .colorb{
+    color:#e59719;
+  }
+
 /* Search button styles */
 .searchButton {
   border:2px solid #e59719;
-  border-radius: 30px;
-  height:60px;
-  width:60px;
+  border-radius: 25px;
+  height:50px;
+  width:50px;
   background: white;
+}
+/* Search box styles */
+#searchBox{
+  transition: 0.6s;
 }
 
 /* corousel styles custom */

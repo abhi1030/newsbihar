@@ -7,17 +7,17 @@
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 			</div>
 			<div class="modal-body">
-				<form action="/examples/actions/confirmation.php" method="post">
+				<form action="./dashboard" method="post">
 					<div class="form-group">
 						<div class="input-group">
 							<span class="input-group-addon"><i class="fa fa-user"></i></span>
-							<input type="text" class="form-control" name="username" placeholder="Username" required="required">
+							<input type="text" class="form-control" name="username" placeholder="Username" >
 						</div>
 					</div>
 					<div class="form-group">
 						<div class="input-group">
 							<span class="input-group-addon"><i class="fa fa-lock"></i></span>
-							<input type="text" class="form-control" name="password" placeholder="Password" required="required">
+							<input type="text" class="form-control" name="password" placeholder="Password">
 						</div>
 					</div>
 					<div class="form-group">
@@ -84,51 +84,28 @@
 			</div>
 			</div>
 
-
-
 <div class="container-fluid mt-4">
   <div class="container-fluid">
-    <div class="row bg-light text-dark text-center pb-4">
-      <div class="col-md-3 mt-4 pb-4 ml-auto mr-auto">
-        <h3>Useful links</h3>
-        <div class="list-group">
-          <a href="#" class="list-group-item list-group-item-action">Contact us</a>
-          <a href="#" class="list-group-item list-group-item-action">Know more about us</a>
-          <a href="#" class="list-group-item list-group-item-action">Join the mission</a>
-          <a href="#" class="list-group-item list-group-item-action">Get in touch.</a>
+    <div class="row bg-grey text-light text-center pb-4">
+      <div class="col-lg-3 mt-4 pb-4 ml-auto mr-auto ">
+        <h3 class="">Useful links</h3>
+        <div class="list-group ">
+          <a href="./contacts" class="text-light tall">Contact Us</a>
+          <a href="./about-us" class="text-light tall">Know more About Us</a>
+          <a href="#" class="text-light tall">Join the Mission</a>
+          <a href="#" class="text-light tall">Get in touch.</a>
         </div>
       </div>
-      <div class="col-md-5 mt-4 pb-4 ml-auto mr-auto">
-        <h3>Send us message</h3>
-        <form>
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="name">Name</label>
-              <input type="text" class="form-control" id="name" placeholder="Name">
-            </div>
-            <div class="form-group col-md-6">
-              <label for="subject">Subject</label>
-              <input type="text" class="form-control" id="subject" placeholder="Subject">
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="email">Email Id</label>
-            <input type="email" class="form-control" id="email" placeholder="Email Id">
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea name="message" class="form-control" rows="5"></textarea>
-          </div>
-
-          <button type="submit" class="btn btn-primary">Send Mail</button>
-        </form>
-
-
-
-
-
+      <div class="col-lg-3 mt-4 pb-4 ml-auto mr-auto ">
+				<h3 class="">Education</h3>
+        <div class="list-group ">
+          <a href="#" class="text-light tall">Online Cources</a>
+          <a href="#" class="text-light tall">Student Guidelines</a>
+          <a href="#" class="text-light tall">Best Institutes</a>
+          <a href="#" class="text-light tall">Admission Guidelines</a>
+        </div>
       </div>
-      <div class="col-md-3 mt-4 pb-4 ml-auto mr-auto">
+      <div class="col-lg-5 mt-4 pb-4 ml-auto mr-auto">
         <h3>Trending news</h3>
         <div class="list-group">
           <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
@@ -160,7 +137,7 @@
     </div>
   </div>
 
-  <p class="text-center text-dark">&copy; Copyright NewsBihar24x7 2018 . All rights reserved</p>
+  <p class="text-center text-light bg-dark">&copy; Copyright NewsBihar24x7 2018 . All rights reserved</p>
 </div>
 
 </body>
